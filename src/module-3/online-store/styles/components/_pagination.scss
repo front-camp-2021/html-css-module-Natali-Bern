@@ -1,0 +1,41 @@
+@use 'sass:math';
+@use '../utils/colors' as *;
+
+$page-link-size: 40px;
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+
+   &__link {
+     line-height: 1;
+     text-decoration: none;
+     line-height: 40px;
+      font-size: 18px;
+      font-weight: 400;
+  
+   }
+
+   &__group {
+      background-color: $background-500;
+      display: flex;
+      gap: 30px;
+      padding: 0 30px;
+      border-radius: 40px;
+    }
+  
+    &__link_active {
+      background-color: $primary-normal;
+      padding: 0 15px;
+      border-radius: 40px;
+      color: $background-0;
+    }
+  
+   &__prev, &__next {
+      background-color: $background-500;
+      padding: 0 15px;
+      border-radius: 40px;
+    }
+ }
+ 
