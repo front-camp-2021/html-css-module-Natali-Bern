@@ -1,0 +1,101 @@
+@use '../utils/colors' as *;
+@use '../utils/variables' as *;
+
+
+.form__group {
+  margin-bottom: 28px;
+  border-bottom: 1px solid $border-400;
+
+  &-wrap{
+    padding: 30px;  
+  }
+
+  :last-child {
+    border-bottom: none;
+  }
+
+  &-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 28px;
+  }
+}
+
+.form__checkbox {
+  margin-bottom: 0;
+}
+
+.form__search-input label {
+  position: absolute;
+  right: 32px;
+  color: $typography-300;
+
+}
+
+.products__search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+
+  &-title {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &-btn {
+    border-radius: 8px;
+    background-color: $primary-normal;
+    width: 46px;
+    height: 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  &-btn i {
+    color: $background-0;
+  }
+}
+
+/* Search panel */
+.form__search-input {
+  position: relative;
+  line-height: 62px;
+
+  label {
+    position: absolute;
+    right: 32px;
+    color: $typography-300;
+  }
+}
+
+.search-input {
+  height: 62px;  
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  font-family: $font-family;
+  font-size: 22px;
+  font-weight: 300;
+  padding: 0 32px;
+  box-shadow: $box-shadow;
+  margin-bottom: 28px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
